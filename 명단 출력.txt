@@ -1,0 +1,52 @@
+Notion 참고 
+SQL 설치 
+---------------SQL----------------
+CREATE DATABASE IF NOT EXISTS academydb DEFAULT CHARACTER SET utf8mb4;
+
+USE academydb;
+
+CREATE TABLE IF NOT EXISTS students(
+	id INT PRIMARY KEY AUTO_INCREMENT UNIQUE NOT NULL,
+    school VARCHAR(100) NOT NULL,
+    grade int NOT NULL,
+	name VARCHAR(100) NOT NULL,
+    date VARCHAR(100) NOT NULL,
+    d_date VARCHAR(100) NOT NULL,
+    commit VARCHAR(100),
+    etc VARCHAR(1000)
+);
+------------------------------------------
+
+
+py -3.9 -m venv name
+name\Scripts\activate
+
+pip intsall PyQt5 PyQt5-tools mysql
+
+
+
+
+
+
+
+
+
+
+
+명단 출력
+명단 추가, 수정, 삭제 
+
+날짜 계산 - 1달 단위 
+확인된 경우 -> 표시 
+
+안낸 경우 -> 표시 (red)
+
+id = key
+school = 학교
+grade = 학년 
+name = 이름
+date = 등록 날짜
+d_date = 한달 뒤 날짜
+commit = 확인여부
+etc = 특이사항
+
